@@ -1,0 +1,58 @@
+name: AI Daily Radar
+
+on:
+  schedule:
+    - cron: "30 8 * * *"
+    - cron: "30 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Berlin schedule
+        id: berlin_time
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run_daily=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          berlin_offset="$(TZ=Europe/Berlin date +%z)"
+          schedule="${{ github.event.schedule }}"
+          if [ "$berlin_offset" = "+0200" ] && [ "$schedule" = "30 8 * * *" ]; then
+            echo "run_daily=true" >> "$GITHUB_OUTPUT"
+          elif [ "$berlin_offset" = "+0100" ] && [ "$schedule" = "30 9 * * *" ]; then
+            echo "run_daily=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run_daily=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.berlin_time.outputs.run_daily == 'true'
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        if: steps.berlin_time.outputs.run_daily == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate report
+        if: steps.berlin_time.outputs.run_daily == 'true'
+        run: python run_daily.py --archive
+
+      - name: Commit report
+        if: steps.berlin_time.outputs.run_daily == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/reports/latest.md data/reports/archive
+          if git diff --cached --quiet; then
+            echo "No report changes to commit."
+          else
+            git commit -m "chore: update AI Daily Radar"
+            git push
+          fi
