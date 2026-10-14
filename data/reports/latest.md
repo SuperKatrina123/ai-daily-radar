@@ -1,73 +1,58 @@
 # AI Daily Radar · 2026-10-14
 
 - 时间窗：过去 24 小时
-- 原始条目：15，去重后：15，应用层相关：10
+- 原始条目：13，去重后：13，应用层相关：7
 - 主题：AI 应用层趋势 → 今天能做什么实践
 
 ## 2-3 个趋势
 
-- Agent 化工作流从演示走向可落地任务
 - 开发者工具正在把 AI 融入日常操作链
-- 多模态创作能力继续产品化
+- 企业和办公场景更重视流程集成
+- 个人效率工具开始围绕上下文和知识库重组
 
 ## 今天的最小实践方案
 
-1. 选一个与你当前工作流最接近的场景，围绕「Apple 发布 7 英寸智能音箱 HomeView，售价 299 美元并搭载 Siri AI」写下 1 个可验证的小假设。
+1. 选一个与你当前工作流最接近的场景，围绕「Lovable 推出增长工具，从同一聊天窗口帮你获客投广告和做 SEO」写下 1 个可验证的小假设。
 2. 用 30 分钟做一个最小原型：输入固定样例、产出固定格式，不追求自动化闭环。
 3. 记录 3 个指标：节省时间、输出质量、是否愿意明天继续用。
-4. 把验证结果沉淀成一条模板或 checklist，并标注来源：Apple：Newsroom（RSS）。
+4. 把验证结果沉淀成一条模板或 checklist，并标注来源：Lovable Blog。
 
 ## 应用层信号
 
-1. **Apple 发布 7 英寸智能音箱 HomeView，售价 299 美元并搭载 Siri AI** — Apple：Newsroom（RSS）（产品与应用）
-   2026-10-13 20:59 CST
-   Apple 发布配备 7 英寸 Liquid Retina 显示屏的 HomeView，集娱乐、FaceTime、家庭监控和语音自动化于一体，标准版与壁挂版均定价 299 美元，11 月 13 日起在美英加澳等市场发售。
-   https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/
+1. **Lovable 推出增长工具，从同一聊天窗口帮你获客投广告和做 SEO** — Lovable Blog（产品与应用）
+   2026-10-14 20:50 CST
+   Lovable 推出增长工具，在原有建应用聊天窗口中提供增长计划、广告投放和 SEO 能力。用户设定目标后，Lovable 依据应用上下文生成可执行计划；可连接 Google Ads 和 Meta 账号在 Google。
+   https://lovable.dev/blog/introducing-growth-tools
 
-2. **LangSmith 推出 AI Search，用自然语言按行为搜索 agent 轨迹** — LangChain：Blog（RSS）（产品与应用）
-   2026-10-13 20:59 CST
-   LangChain 在 LangSmith 中推出 AI Search 公测，允许用自然语言描述行为来查询 agent 轨迹，例如 PII 泄露或用户受挫等无法靠标签和全文检索回答的问题。
-   https://www.langchain.com/blog/agent-traces-ai-search-langsmith
+2. **实测Gemini 4 Argon：知识工作强劲但体验糟糕，卡兹克称难撼Claude Opus 5.5与GPT-6 Astra** — 公众号：数字生命卡兹克（其他）
+   2026-10-14 06:56 CST
+   Gemini 4 Argon于10月13日全面开放，Pro会员可在Gemini APP使用，Antigravity需100刀Ultra会员。作者实测认为其知识类专业能力强，Vals Index综合第一（68.9）且单次成本仅15.68美元，但CUA-bench仅4.83%排倒数第二；前端效果不及GPT-6 Astra，额度消耗快，中文写作味道重，整体体验糟糕，不建议订阅Ultra。
+   https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687032&idx=1&sn=c5368ed503c4b529ee3946cce017543e
 
-3. **Character.AI 成立五年后申请 Chapter 11 破产，部分资产以 2000 万美元出售给 Disney** — TechCrunch：AI（RSS）（行业与平台）
-   2026-10-13 20:23 CST
-   Character.AI 已申请 Chapter 11 破产，法院文件显示其资产和负债在 5000 万至 1 亿美元之间，并同意以 2000 万美元向 Disney 出售部分资产及技术非独占永久许可。出售过程预计 11 月底或 12 月初完成，期间平台继续运营，但尚无竞购方，若无买家平台将关停；此前公司因未成年用户诉讼、德州调查等困境，曾尝试 AI 视频生成、社交信息流和微短剧等转型未果。
-   https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/
+3. **Visual Studio Copilot 与 SSMS 远程代码执行漏洞（CVE-2026-103572）技术分析** — Johann Rehberger / Embrace The Red（RSS）（论文研究）
+   2026-10-14 06:00 CST
+   Johann Rehberger 披露 Visual Studio Copilot 与 SQL Server Management Studio 中的远程代码执行漏洞 CVE-2026-103572，根因是利用文件名末尾多加一个点绕过路径校验，写入 .mcp. 或 settings.VisualStudio. 等受保护配置文件，实现任意命令执行。
+   https://embracethered.com/blog/posts/2026/visual-studio-copilot-remote-code-execution/
 
-4. **NVIDIA 官宣 RTX Spark 软件生态就绪，10 月 16 日笔记本上市** — NVIDIA Blog（RSS）（产品与应用）
-   2026-10-13 20:00 CST
-   NVIDIA 介绍 RTX Spark 平台生态就绪情况，RTX Spark 笔记本将于 10 月 16 日（周五）上市，搭载最高 128GB 统一内存和 1 petaflop AI 算力。
-   https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates/
+4. **OpenAI 办公室发现窃密录音装置，涉事员工被捕** — X：OpenAI Newsroom (@OpenAINewsroom)（行业与平台）
+   2026-10-14 03:48 CST
+   OpenAI 宣布在办公室内发现一个隐蔽的录音装置，利用自家模型分析该设备及其来源，确认是一名员工几天前安放。OpenAI 已将此事移交 FBI，FBI 已迅速逮捕相关人员，调查仍在进行中。OpenAI 表示目前没有迹象显示该员工不当访问或外泄模型权重、源代码或客户数据，该员工已被解雇，并将此案视为 AI 协助应对复杂安全威胁的实例。
+   https://x.com/OpenAINewsroom/status/2110095403198849132
 
-5. **LangChain 发布 langchain-scaledown 集成，用 ScaleDown 约束解码模型管理长时智能体上下文** — LangChain：Blog（RSS）（技巧与观点）
-   2026-10-13 19:56 CST
-   LangChain 发布 langchain-scaledown 集成，并在 LangSmith LLM Gateway 中支持 ScaleDown 的约束解码模型（CDM），用于降低长时智能体上下文管理的成本和延迟。
-   https://www.langchain.com/blog/building-long-running-agents-with-scaledown-and-deep-agents
+5. **ComfyUI 上线 NVIDIA VFX 节点，支持视频超分、补帧与 SDR 转 HDR** — Comfy Blog（产品与应用）
+   2026-10-14 03:41 CST
+   NVIDIA 的 RTX 视频特效模型以自定义节点形式登陆 ComfyUI，模型随节点分发并在本地 RTX GPU 上运行。
+   https://blog.comfy.org/p/nvidia-vfx-nodes-for-video-upscaling
 
-6. **千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售** — 公众号：千问APP（阿里）（产品与应用）
-   2026-10-13 16:06 CST
-   千问发布三款硬件新品：AI眼镜N1、N1 Pro和AI耳夹式耳机，今日在淘宝、天猫、京东、抖音等平台现货开售，眼镜到手价2218元起，耳机1099元起。
-   https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247489149&idx=1&sn=26d7fefe24bfb18efa4582467313b1eb
+6. **Google DeepMind 的 Gemini 4 Argon 上线 OpenRouter** — X：OpenRouter (@OpenRouter)（产品与应用）
+   2026-10-14 00:26 CST
+   Gemini 4 Argon 已上线 OpenRouter，可通过 Google AI Studio 和 Google Cloud 调用。该模型在 AutomationBench 拿到 51.3%、LVBench 拿到 91.7%，并以 68% 并列 CWE-bench v1 第一； introductory 定价为输入 $2/M、输出 $10/M。试用入口：https://openrouter.ai/google/gemini-4-argon
+   https://x.com/OpenRouter/status/2110044453977403412
 
-7. **Gemini 4 Argon (gemini-4-argon) 正式发布 GA** — Gemini API：更新日志（网页）（模型能力）
-   2026-10-13 08:00 CST
-   Google 发布 Gemini 4 Argon（gemini-4-argon）并正式进入 GA 阶段，定位为其最强模型，面向复杂编码、智能体、数学和科学任务。API 变化、定价与迁移指引见 What's new in Gemini 4 Argon 文档。
-   https://ai.google.dev/gemini-api/docs/changelog#10-13-2026
-
-8. **Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期** — Ars Technica：AI（RSS）（行业与平台）
-   2026-10-13 04:59 CST
-   据 Bloomberg 报道，Epic Games 在与迪士尼 15 亿美元合作项目中转向 AI 先行开发，由 Anthropic 的 Claude 等模型编写全部代码并指导全部美术，人类开发者负责管理和引导生成内容。
-   https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/
-
-9. **用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程** — Codex：GitHub Releases（RSS）（行业与平台）
-   2026-10-13 03:25 CST
-   一位 Linux (WSL2) 用户报告，Codex CLI 0.157.0 起打开交互式会话即默认启动持久后台守护进程 codex app-server --managed-daemon，窗口关闭后仍驻留。
-   https://github.com/openai/codex/issues/48195
-
-10. **Meta Muse Wonder 系列上线 Agent Arena，分数即将公布** — X：Arena (@arena)（模型能力）
-   2026-10-13 02:04 CST
-   Arena 宣布 Meta 的 Muse Wonder 系列模型上线 Agent Arena，用户可实测，分数即将公布。
-   https://x.com/arena/status/2109706854700044523
+7. **Google 发布 Gemini 4 Argon：面向复杂工程与科研任务的前沿模型** — Google Blog：AI（RSS）（模型能力）
+   2026-10-14 00:00 CST
+   Google 发布 Gemini 4 Argon，面向开发者、企业、科学家和消费者全球开放，可经 Gemini API、AI Studio、Google Antigravity。
+   https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/
 
 
 ## 后续推送接口预留
@@ -79,6 +64,6 @@
 
 ## 生成说明
 
-- 生成时间：2026-10-14 00:13 CST
+- 生成时间：2026-10-14 21:55 CST
 - 数据来自 AI HOT 精选条目。
 - Prompt：`prompts/ai_daily_radar.md`
