@@ -1,83 +1,83 @@
-# AI Daily Radar · 2026-10-20
+# AI Daily Radar · 2026-10-21
 
 - 时间窗：过去 24 小时
-- 原始条目：20，去重后：20，应用层相关：12
+- 原始条目：18，去重后：18，应用层相关：12
 - 主题：AI 应用层趋势 → 今天能做什么实践
 
 ## 2-3 个趋势
 
-- Agent 化工作流从演示走向可落地任务
 - 开发者工具正在把 AI 融入日常操作链
-- 个人效率工具开始围绕上下文和知识库重组
+- Agent 化工作流从演示走向可落地任务
+- 企业和办公场景更重视流程集成
 
 ## 今天的最小实践方案
 
-1. 选一个与你当前工作流最接近的场景，围绕「llm-d 1.0 发布：Kubernetes 原生分布式推理服务走向生产就绪」写下 1 个可验证的小假设。
+1. 选一个与你当前工作流最接近的场景，围绕「NVIDIA 在 GTC Berlin 展示 RTX Spark、DGX Spark 和 DGX Station 本地 AI 硬件全线更新」写下 1 个可验证的小假设。
 2. 用 30 分钟做一个最小原型：输入固定样例、产出固定格式，不追求自动化闭环。
 3. 记录 3 个指标：节省时间、输出质量、是否愿意明天继续用。
-4. 把验证结果沉淀成一条模板或 checklist，并标注来源：IBM Research：AI。
+4. 把验证结果沉淀成一条模板或 checklist，并标注来源：NVIDIA Blog（RSS）。
 
 ## 应用层信号
 
-1. **Meta Muse 分享链接设计缺陷致用户隐私对话可被枚举发现** — Ars Technica：AI（RSS）（行业与平台）
-   2026-10-20 20:33 CST
-   安全公司 Claroc 的研究人员发现，Meta 的 AI 智能体 Muse 的对话分享链接存在隐私风险，仅用一次查询就枚举出 6800 个分享链接，打开其中数百个后发现贷款申请、收入报表、员工假期日历等敏感内容。
-   https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/
+1. **OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden** — OpenAI：官网动态（RSS · 排除企业/客户案例）（行业与平台）
+   2026-10-21 20:00 CST
+   OpenAI 与 Google Cloud 达成合作，将把 OpenAI 前沿模型和 Codex 智能体工作流引入 Google Cloud 的 Model Garden，客户可通过 Google Cloud Marketplace 购买，并可用 GCP 消费承诺抵扣。
+   https://openai.com/index/openai-models-google-cloud
 
-2. **美国陆军网络司令部 ECHOTRIBBLE 项目拟将 AI 智能体变成自主扩散的网络武器** — The Decoder：AI News（RSS）（行业与平台）
-   2026-10-20 20:32 CST
-   据 The Intercept 获取的文件，美国陆军网络司令部（ARCYBER）正在开发代号 ECHOTRIBBLE 的平台，让 AI 智能体自主在网络间移动、识别并清除威胁目标，之后自毁，且须在极少人工监督下运行。
-   https://the-decoder.com/army-cyber-commands-echotribble-would-turn-ai-agents-into-self-spreading-cyberweapons/
+2. **NVIDIA 在 GTC Berlin 展示 RTX Spark、DGX Spark 和 DGX Station 本地 AI 硬件全线更新** — NVIDIA Blog（RSS）（产品与应用）
+   2026-10-21 18:50 CST
+   NVIDIA 在 GTC Berlin 展示其本地 AI 硬件全线：RTX Spark 面向 Windows PC 个人智能体，DGX Spark 面向 Linux 开发者并支持最多八机集群，DGX Station 提供 748GB 一致内存、面向企业团队，Windows 版 12 月推出。
+   https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/
 
-3. **llm-d 1.0 发布：Kubernetes 原生分布式推理服务走向生产就绪** — IBM Research：AI（产品与应用）
-   2026-10-20 20:00 CST
-   IBM、Red Hat 和 Google 等主导的开源推理项目 llm-d 在 PyTorch Conference North America 上发布 llm-d 1.0，这是一个 Kubernetes 原生的分布式推理服务框架，支持任意模型、任意加速器和任意云。
-   https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving?utm_medium=rss&utm_source=rss
+3. **NVIDIA 联合六家供应链伙伴扩大制造产能** — NVIDIA：Newsroom（RSS）（行业与平台）
+   2026-10-21 18:33 CST
+   NVIDIA 在 GTC Berlin 宣布与 Amkor、IBIDEN、KYEC、三星电机、SPIL 和欣兴电子合作扩大基板、先进封装、测试和光引擎产能。基板产能未来三年提升 2.5 倍，Amkor 先进封装产能到 2028 年底提升超 300%，KYEC 获 NVIDIA 11 亿美元产能预留预付款在美国建新厂，SPIL 光引擎产能目标 2027 年中提升 15 倍。
+   https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout
 
-4. **DeepSeek 全面开源内部推理框架 DeepInfer** — 公众号：DeepSeek（深度求索）（产品与应用）
-   2026-10-20 16:54 CST
-   DeepSeek 宣布将内部推理框架 DeepInfer 全面开源，并同步开源生产级 Token 编解码组件 deepseek-recipe。
-   https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ%3D%3D&mid=2247485884&idx=1&sn=d457981abe7db1f1b5d600fc109dc836
+4. **NVIDIA 在 GTC Berlin 宣布 Bolt、沃尔沃等欧洲车企基于 Hyperion 构建 L3/L4 车辆与 robotaxi 车队** — NVIDIA：Newsroom（RSS）（产品与应用）
+   2026-10-21 18:14 CST
+   NVIDIA 在 GTC Berlin 宣布 Bolt（与 Lucid 合作）、Mercedes-Benz、Volkswagen Commercial Vehicles、Einride 等欧洲车企和出行公司在 NVIDIA Hyperion 计算平台上展示自动驾驶用例，Volvo Cars 采用 Hyperion 与 Alpamayo Stack。
+   https://nvidianews.nvidia.com/news/european-mobility-leaders-build-safe-vehicles-and-robotaxi-fleets-on-nvidia-hyperion
 
-5. **FBI 称前 OpenAI 工程师涉嫌窃密，手机中发现 Saudi Gov Docs 文件夹** — Ars Technica：AI（RSS）（行业与平台）
-   2026-10-20 04:21 CST
-   美国法院批准羁押被指控在 OpenAI 会议室安装窃听器的前工程师 Abdulrahman Alfozan。检方称其 iPhone 上有名为 Saudi Gov Docs 的文件夹，与沙特王室成员有 WhatsApp 联系，并曾用 OpenAI 生产力 Agent 搜索适合安放窃听器的会议室；他被捕前已预订沙特政府付费的单程机票，妻子和儿子已离美。
-   https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/
+5. **NVIDIA 扩展开源模型家族，覆盖语言、机器人、生物与量子计算以支持欧洲主权智能** — NVIDIA Blog（RSS）（模型能力）
+   2026-10-21 18:00 CST
+   NVIDIA 扩展开源模型家族，推出 Nemotron 3.5 Super VL 与 Nemotron 3.5 Bolt、Nemotron Retriever、Kumo 结构化数据模型、Cosmos 3.5 世界模型、Alpamayo 2 Edge 自动驾驶推理模型、BioNeMo RFD4-Proteina 蛋白质设计模型及量子计算 Ising 模型家族。
+   https://blogs.nvidia.com/blog/open-models-europe-industry/
 
-6. **fal 联合 bfl_ai 发布后训练视频模型 FLUX 3 Max** — X：fal (@fal)（模型能力）
-   2026-10-20 02:34 CST
-   fal 发布与 @bfl_ai 合作的最新后训练视频模型 FLUX 3 Max，在第三方 image-to-video 质量评测中并列第一，生成 10 秒 720/768p 视频约需 12 秒。未来三周该模型 75% 折扣，标注为同质量级别最便宜的前沿视频模型。
-   https://x.com/fal/status/2112251022047412492
+6. **NVIDIA GTC Berlin 2026：黄仁勋主题演讲发布 Vera Rubin AI 工厂、OpenShell 与 Agile ONE SN 人形机器人** — NVIDIA Blog（RSS）（行业与平台）
+   2026-10-21 17:30 CST
+   NVIDIA CEO 黄仁勋在 GTC Berlin 2026 发表主题演讲，宣布 NVIDIA 在欧洲投入近 100 亿美元、合作超 12000 家伙伴，并发布多项产品。
+   https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/
 
-7. **DeepSeek-V4.1-Flash-20261017 (Max) 登顶 Agent Arena 开源模型第一** — X：Arena (@arena)（模型能力）
-   2026-10-20 02:18 CST
-   Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Agent Arena 第一开源模型，总排名第 11，基于超 7.5K 真实会话净提升 +5.1%。其中位任务成本 $0.20，约为 GPT-6.1 Sol 提升幅度的 37%、成本的 27%；Confirmed Success 提升 +11.5%，且无 Tool Hallucination 问题。
-   https://x.com/arena/status/2112247114944360666
+7. **OpenAI API 支持 12 小时 prompt 缓存，Codex 与 Work 用户缓存永久保留** — X：Tibo (@thsottiaux)（产品与应用）
+   2026-10-21 09:10 CST
+   OpenAI 开发者账号宣布 API 现已可选 12 小时 prompt 缓存，持续运行的智能体可在请求间隔数小时的情况下继续以更低的缓存输入费率复用指令、工具和上下文。Tibo 补充称，Codex 与 Work 中已登录用户的缓存会永久保留，返回旧对话或数小时后恢复会话保证命中缓存，且无额外惩罚。
+   https://x.com/thsottiaux/status/2112712984644784534
 
-8. **Inception 扩散模型 Mercury 3 上线 OpenRouter** — X：OpenRouter (@OpenRouter)（产品与应用）
-   2026-10-20 00:54 CST
-   Inception 的扩散模型 Mercury 3 上线 OpenRouter，生成速度超 1,000 tok/s，支持 1M 上下文，是 Mercury 2.5 的 4 倍。Inception 报告其在 IFBench、GPQA Diamond 和 SWE-Bench Atlas 上超过 GPT-6 Luna 和 Haiku 5.5；上线期五折，价格 $0.10/M 输入、$0.35/M 输出。
-   https://x.com/OpenRouter/status/2112225779782398131
+8. **蚂蚁集团与 vLLM 社区开源量化推理内核库 Humming** — vLLM 官方博客（RSS）（产品与应用）
+   2026-10-21 08:00 CST
+   蚂蚁集团与 vLLM 社区开源通用高性能量化推理内核库 Humming，仓库为 github.com/vllm-project/humming。
+   https://vllm.ai/blog/2026-10-21-humming
 
-9. **Redact 调查：WhatsApp 帮助页面隐藏 LLM 指令，让 AI 不推荐监管机构、不提 GDPR** — Hacker News：AI 热帖（行业与平台）
-   2026-10-20 00:00 CST
-   Redact 发现 WhatsApp 帮助中心页面向 LLM 发送用户看不到的隐藏指令，指示其支持聊天机器人不推荐数据保护监管机构，并在用户提到律师或法律行动后不引用 GDPR、LGPD 或 CCPA。
-   https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions
+9. **fal 发布 FLUX 3 Max，图生视频 Elo 达 1139 并列第一** — X：fal (@fal)（模型能力）
+   2026-10-21 01:42 CST
+   fal 发布与 Black Forest Labs 合作后训练的视频模型 FLUX 3 Max，在第三方独立人类偏好评测中获 1139 Elo，与 Seedance 2.5 并列图生视频质量第一梯队。该模型约 12 秒生成一段 10 秒 720/768p 视频，未来三周降价 75%，后续还将继续后训练改进。
+   https://x.com/fal/status/2112600472922333263
 
-10. **Meta 详解 Thin Orchestrator 模式：让路由少干活提升 AI 智能体可靠性** — Meta Engineering Blog（RSS）（技巧与观点）
-   2026-10-19 23:30 CST
-   Meta 工程团队介绍其数据管道智能体采用的瘦编排器（thin orchestrator）模式：一个约 1300 行的编排器只负责路由和可靠性检查，将 20+ 工作流分派给 14 个上下文隔离的专项子智能体，自身不做任何领域推理。
-   https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/
+10. **Perplexity Computer 现可在 Mac 上完全本地运行，无需云端推理** — X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)（产品与应用）
+   2026-10-21 00:34 CST
+   Perplexity CEO Aravind Srinivas 宣布，Perplexity Computer 现可在 Mac 上完全本地运行，无需云端推理，也不用 WiFi。模型和智能体都在本机运行，可操作 Mac 原生应用和本地文件，敏感数据不必发送到云端，现已在 Perplexity Mac 应用中可用。
+   https://x.com/AravSrinivas/status/2112583333825950207
 
-11. **美国国土安全部下令所有联邦文职机构移除 DeepSeek 及基于其开发的产品** — Hacker News：AI 热帖（行业与平台）
-   2026-10-19 23:05 CST
-   美国国土安全部依据 2018 年供应链法发布 2026-01 号命令，要求所有联邦文职机构立即停止采购 DeepSeek 及其关联公司产品，并从 IT 系统中移除相关产品，包括使用 DeepSeek 实现开发的第三方产品与服务。
-   https://madrobot.blog/2026/10/19/us-bans-deepseek-federal-agencies-dhs-order-remove-third-party/
+11. **Google 与 Meta 发布 TorchTPU：PyTorch 原生 TPU 后端** — PyTorch：Blog（RSS）（产品与应用）
+   2026-10-21 00:00 CST
+   Google 与 Meta 发布开源项目 TorchTPU，为 Google TPU 提供原生 PyTorch 后端，模型迁移只需把 .to("cuda") 改为 .to("tpu")。
+   https://pytorch.org/blog/introducing-torchtpu/
 
-12. **黑客用 AI 智能体入侵 John Deere、SharkNinja 等超 100 家网站** — The Verge：AI（RSS）（行业与平台）
-   2026-10-19 21:58 CST
-   AI 安全公司 Norforge 发现一名黑客用开源 AI 平台 Cairn 编排的智能体入侵了超过 100 个网站，据 Reuters 报道受害者包括 John Deere、SharkNinja 和 Cummins。
-   https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins
+12. **编程 Agent 增长遭遇人类评审瓶颈：Tessl 博客解析信任赤字** — Tessl：产品与工程博客（其他）
+   2026-10-21 00:00 CST
+   Tessl 博客引用 Jellyfish 2026 年 9 月 AI Engineering Trends 数据指出，中位数公司已有 22% 的合并 PR 由自主编码 Agent 撰写（90 分位达 53%），但仅约 0.6% 的 PR 由 Agent 评审合并（前 10% 公司为 9%）。
+   https://tessl.io/blog/there-arent-enough-chaperones-for-all-your-coding-agents
 
 
 ## 后续推送接口预留
@@ -89,6 +89,6 @@
 
 ## 生成说明
 
-- 生成时间：2026-10-20 21:44 CST
+- 生成时间：2026-10-21 22:00 CST
 - 数据来自 AI HOT 精选条目。
 - Prompt：`prompts/ai_daily_radar.md`
